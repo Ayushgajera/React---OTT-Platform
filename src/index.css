@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* primary -#1F1E24  */
+/* primary - */
 /* secondary -#6556CD */
 ::-webkit-scrollbar{
     width: 8px;
@@ -12,3 +12,16 @@
     background-color: #6556CD;
     border-radius: 20px;
 }
+body{
+    background-color: #1F1E24 ;
+}
+/* Add this globally to prevent horizontal scrolling */
+body {
+    overflow-x: hidden;
+  }
+  
+  /* Sidenav styles */
+  
+  
+  
+  

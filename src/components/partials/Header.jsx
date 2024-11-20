@@ -9,13 +9,13 @@ function Header({ data }) {
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
-      className="w-full h-[60vh] flex flex-col justify-center items-start px-8"
+      className="w-[90vw] min-h-[60vh] flex flex-col justify-center items-start px-10  bg-red-400 "
     >
-      <div className="bg-black bg-opacity-50 p-6 pb-8 rounded-lg max-w-[70%]">
-        <h1 className="text-white text-5xl font-bold mb-4 leading-tight">
+      <div className="rounded-lg max-w-[70%]">
+        <h1 className="text-white text-4xl font-bold mb-4 leading-tight">
           {data.title || data.name || data.original_name || "No Title Available"}
         </h1>
-        <p className="text-white text-lg mb-4">
+        <p className="text-white text-md mb-4">
           {data.overview
             ? `${data.overview.slice(0, 200)}...`
             : "No description available."}{" "}
@@ -26,9 +26,7 @@ function Header({ data }) {
         <div className="text-white flex items-center gap-4 text-sm mb-8">
           <div className="flex items-center gap-2">
             <i className="ri-megaphone-fill text-yellow-400 text-xl"></i>
-            <span>
-              {data.first_air_date || "Release date not available"}
-            </span>
+            <span>{data.first_air_date || "Release date not available"}</span>
           </div>
           <div className="flex items-center gap-2">
             <i className="ri-album-fill text-yellow-400 text-xl"></i>
@@ -36,8 +34,8 @@ function Header({ data }) {
           </div>
         </div>
         <Link
-          
-          className="bg-[#6556CD] text-white font-semibold py-4 px-6 rounded-lg "
+          to="#"
+          className="bg-[#6556CD] text-white font-semibold py-4 px-6 rounded-lg"
         >
           Watch Trailer
         </Link>

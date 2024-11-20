@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 function Sidenav() {
     return (
-        <div className='w-[20%] h-full border-r-2 ' >
+        <div className='w-[15%] h-full border-r-2 fixed ' >
             <div className="flex items-center">
                 <i className="text-[#6556CD] ri-tv-fill mt-4 ml-2 text-3xl"></i>
                 <h1 className="text-2xl text-white m-4">Netflix Pro</h1>

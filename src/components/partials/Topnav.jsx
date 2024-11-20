@@ -28,7 +28,7 @@ function Topnav() {
   }, [query]);
 
   return (
-    <div className=' w-80% h-[10vh] text-white relative flex justify-start items-center ml-[20%]'>
+    <div className=' w-[80%] h-[10vh] text-white relative flex justify-start items-center ml-[20%]'>
       <i className="ri-search-line text-3xl text-gray-400 pt-1"></i>
       <input onChange={(e) => { setquery(e.target.value) }} value={query} type="text" placeholder='Search Anything' className='input-search w-[50%] mx-2 p-5 text-2xl font-semibold bg-transparent outline-none rounded  ' />
 
