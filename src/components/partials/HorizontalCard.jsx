@@ -3,15 +3,10 @@ import { Link } from "react-router-dom";
 import Dropdown from "./Dropdown";
 
 
-function HorizontalCard({ data }) {
+function HorizontalCard({ data}) {
   return (
     <div className="w-full h-[50vh] mr-[10%] ">
-      <div className='flex justify-between'>
-
-      <h1 className="text-4xl text-zinc-300">Trending</h1>
-      <Dropdown/>
-      </div>
-
+     
       <div className="w-full flex flex-nowrap overflow-x-auto space-x-4">
         {data.map((item, i) => (
           <div key={i} className=" bg-zinc-900 cards min-w-[17%] min-h-[53vh] m-2 rounded-lg overflow-hidden ">

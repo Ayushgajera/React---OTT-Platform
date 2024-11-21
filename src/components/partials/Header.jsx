@@ -35,8 +35,7 @@ function Header({ data }) {
         </div>
         <Link
           to="#"
-          className="bg-[#6556CD] text-white font-semibold py-4 px-6 rounded-lg"
-        >
+          className="bg-[#6556CD] text-white font-semibold py-4 px-6 rounded-lg">
           Watch Trailer
         </Link>
       </div>
